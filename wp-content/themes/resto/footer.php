@@ -37,6 +37,7 @@
 				<li><img src="<?php echo(get_template_directory_uri()); ?>/imagens/white_logo.png" alt="logo"></li>
 				<li>&copy; Todos os direitos reservados</li>
 			</ul>
+			<?php dynamic_sidebar( 'footer' ); ?>
 		</div><!-- .wrapper -->
 	</footer><!-- footer -->
 </div><!-- #page -->

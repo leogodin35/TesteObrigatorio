@@ -71,30 +71,18 @@ get_header(); ?>
 
         <section id="figuras">
           <ul>
-            <li>
-              <img src="imagens/thumb1.jpg" alt="">
-              <a href="#">Prato do dia</a>
-              <span>$30</span>
-              <span class="rating"></span>
-            </li>
-            <li>
-              <img src="imagens/thumb1.jpg" alt="">
-              <a href="#">Prato do dia</a>
-              <span>$30</span>
-              <span class="rating"></span>
-            </li>
-            <li>
-              <img src="imagens/thumb1.jpg" alt="">
-              <a href="#">Prato do dia</a>
-              <span>$30</span>
-              <span class="rating"></span>
-            </li>
-            <li>
-              <img src="imagens/thumb1.jpg" alt="">
-              <a href="#">Prato do dia</a>
-              <span>$30</span>
-              <span class="rating"></span>
-            </li>
+						<?php
+						/* Start the Loop */
+						$myquery = new WP_Query('category_name=itens-do-menu&posts_per_page=4');
+						while ( $myquery->have_posts() ) : $myquery->the_post();
+							?>
+							<li>
+								<?php the_post_thumbnail(); ?>
+								<a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+								<span><?php echo get_post_meta($post->ID, 'Preço', true); ?></span>
+								<span class="star-<?php echo get_post_meta($post->ID, 'Rating', true); ?> rating"></span>
+							</li>
+						<?php endwhile; ?>
           </ul>
         </section>
       </div>
