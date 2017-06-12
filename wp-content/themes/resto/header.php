@@ -27,17 +27,22 @@
 
 	<header>
 		<div class="wrapper">
-			<h1 class="logo">Resto</h1>
+			<div class="logotipo">
+				<h1 class="logo">Resto</h1>
+			</div>
 			<nav role="navigation">
-				<h2>Navegação Principal</h2>
-				<?php
-					wp_nav_menu( array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-					) );
-				?>
+
+				<div class="nav-itens">
+					<h2>Navegação Principal</h2>
+					<?php
+						wp_nav_menu( array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						) );
+					?>
+				</div>
 			</nav><!-- #site-navigation -->
-		</div><!-- .wrapper -->		
+		</div><!-- .wrapper -->
 	</header><!-- header -->
 
 	<div id="content" class="site-content">

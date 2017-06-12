@@ -895,10 +895,33 @@ h1.logo {
   width: 100px;
   text-indent: -10000px;
   float: left;
+	margin: 1px 5px;
 }
+
+header {
+	height: 90px;
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	font-size: 1em;
+	z-index: 1;
+	transition: all .5s;
+}
+
+.header_close {
+	font-size: 0.7em;
+	height: 0px;
+}
+
 
 header nav {
   float: right;
+	position: relative;
+	top: -15px;
+	transition: all 0.3s;
 }
 
 header nav h2 {

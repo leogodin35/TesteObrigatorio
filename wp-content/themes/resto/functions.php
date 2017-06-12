@@ -126,6 +126,11 @@ function resto_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'resto_scripts' );
 
+function menu_scripts() {	
+	wp_enqueue_script('jquery', get_stylesheet_directory_uri() . '/js/jquery-3.1.1.min.js');
+	wp_enqueue_script('menu-animado', get_stylesheet_directory_uri() . '/js/script.js');
+}
+add_action( 'wp_enqueue_scripts', 'menu_scripts' );
 /**
  * Add a pingback url auto-discovery header for singularly identifiable articles.
  */
