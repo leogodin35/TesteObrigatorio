@@ -892,14 +892,13 @@ body {
 h1.logo {
   background-image: url(imagens/logo.png);
   background-repeat: no-repeat;
-  width: 100px;
+  width: 80px;
   text-indent: -10000px;
-  float: left;
-	margin: 1px 5px;
+	margin: 5px 0px 15px 15px;
 }
 
 header {
-	height: 90px;
+	height: 80px;
 	width: 100%;
 	background-color: #fff;
 	display: flex;
@@ -907,21 +906,28 @@ header {
 	justify-content: center;
 	position: fixed;
 	font-size: 1em;
-	z-index: 1;
+	z-index: 2;
 	transition: all .5s;
 }
 
 .header_close {
-	font-size: 0.7em;
+	font-size: 0.8em;
 	height: 0px;
+	top: -85px;
+	transition: all .5s;
 }
 
+header div.logotipo {
+	position: absolute;
+	display: block;
+}
 
 header nav {
-  float: right;
+	float: right;
+	display: block;
 	position: relative;
 	top: -15px;
-	transition: all 0.3s;
+	margin-left: 70px;
 }
 
 header nav h2 {
@@ -939,7 +945,20 @@ header nav li {
 header nav li a {
   text-decoration: none;
   color: #333;
-  font-size: 18px;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width:794px) {
+	header {
+		font-size: 0.8em;
+		height: 140px;
+	}
+
+	.header_close {
+		font-size: 0.8em;
+		height: 0px;
+		top: -85px;
+	}
 }
 
 #main-banner, #main-banner img {
