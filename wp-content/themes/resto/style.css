@@ -1,5 +1,5 @@
 /*
-Theme Name: resto
+Theme Name: 4Rodas
 Theme URI: http://underscores.me/
 Author: Leonardo Godinho
 Author URI: http://underscores.me/
@@ -878,33 +878,44 @@ object {
 /*******************   CSS ADICIONAL   *********************/
 
 body {
-  font-family: Georgia;
+  font-family: Arial;
   margin: 0;
 }
 
-.wrapper {
-  width: 100%;
-  max-width: 1180px;
+#banner {
+	width: 100%;
+  max-width: 727px;
   padding: 0 10px;
+  margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrapper {
+  max-width: 1320px;
+  padding: 0;
   margin: 0 auto;
 }
 
 h1.logo {
   background-image: url(imagens/logo.png);
   background-repeat: no-repeat;
-  width: 80px;
+  width: 187px;
   text-indent: -10000px;
-	margin: 5px 0px 15px 15px;
+	margin: 5px 0px 0px 15px;
+	float: left;
 }
 
 header {
-	height: 80px;
-	width: 100%;
-	background-color: #fff;
+	height: 108px;
+	max-width: 1320px;
+	margin: 10px auto;
+	background-color: red;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	position: fixed;
+	position: relative;
 	font-size: 1em;
 	z-index: 2;
 	transition: all .5s;
@@ -917,17 +928,14 @@ header {
 	transition: all .5s;
 }
 
-header div.logotipo {
-	position: absolute;
-	display: block;
-}
 
 header nav {
 	float: right;
 	display: block;
 	position: relative;
-	top: -15px;
-	margin-left: 70px;
+	top: -10px;
+	align-items: center;
+	justify-content: center;
 }
 
 header nav h2 {
@@ -944,9 +952,59 @@ header nav li {
 
 header nav li a {
   text-decoration: none;
-  color: #333;
-  font-size: 1.2em;
+  color: #fff !important;
+  font-size: 0.8em;
+	font-weight: 600;
 }
+
+.acessados {
+	float: left;
+	position: relative;
+	left: 0px;
+  width: 1320px;
+	height: 28px;
+	color: #fff;
+}
+
+.acessados h4 {
+	position: relative;
+	left: 10px;
+  width: 12%;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.acessados h4 span {
+	position: relative;
+	top: 10px;
+	width: 100%;
+	left: 10px;
+}
+
+.acessados ul {
+  background-color: #000;
+	float: left;
+	width: 85%;
+	margin: 0;
+	position: relative;
+	top: 10px;
+	left: 10px;
+}
+
+.acessados li {
+  float: left;
+  list-style-type: none;
+  margin: 2px 10px;
+}
+
+.acessados li a {
+  text-decoration: none;
+  color: #fff !important;
+  font-size: 0.8em;
+	font-weight: 600;
+}
+
 
 .entry-content {
 	padding-top: 100px;
@@ -970,75 +1028,52 @@ header.entry-header {
 	}
 }
 
-#main-banner, #main-banner img {
-  width: 100%;
-}
-
-#main-banner img {
-  border-bottom: 6px solid #f34949;
-}
-
-#home-menu h2 {
-  background-image: url(imagens/menu_red.png);
-  background-repeat: no-repeat;
-  width: 156px;
-  height: 74px;
-  text-indent: -10000px;
-  margin: 0 auto;
-  position: relative;
-  top: -8px;
-}
-
-#home-menu ul {
-  padding: 0;
-  list-style-type: none;
-}
-
-#home-menu li {
+#figura-principal-1, #figura-principal-1 img {
   float: left;
-  width: 42%;
-  padding: 0;
-  margin: 20px 0 20px 8%;
+	width: 610px;
+	height: 497px;
 }
-
-#home-menu li:nth-child(odd) {
-  margin: 20px 8% 20px 0;
+#figura-principal-2 {
+	float: left;
+	width: 610px;
+	height: 497px;
 }
-
-.prato {
+#sub-figura-principal-1, #sub-figura-principal-1 img {
   float: left;
-  color: #555;
-  font-weight: bold;
-  position: relative;
-  z-index: 1;
-  background: #fff;
-  padding-right: 15px;
+	width: 710px;
+	height: 248px;
+	display: inline;
 }
-
-.preco {
-  float: right;
-  color: #555;
-  font-weight: bold;
-  position: relative;
-  z-index: 1;
-  background: #fff;
-  padding-left: 15px;
+div#sub-figura-principal-2, div#sub-figura-principal-2 img {
+	float: left;
+	width: 710px;
+	height: 249px;
+	display: inline;
 }
-
-.descricao {
-  clear: both;
-  display: block;
-  color: #999;
-  font-style: italic;
-  font-size: 14px;
-  padding-top: 10px;
-  border-top: 1px solid #ddd;
-  position: relative;
-  top: -8px;
+div#sub-sub-figura-principal-1, div#sub-sub-figura-principal-1 img {
+  float: left;
+	width: 356px;
+	height: 248px;
+}
+div#sub-sub-figura-principal-2, div#sub-sub-figura-principal-2 img {
+  float: left;
+	width: 354px;
+	height: 248px;
+}
+div#sub-sub-figura-principal-3, div#sub-sub-figura-principal-3 img {
+  float: left;
+	width: 356px;
+	height: 249px;
+}
+div#sub-sub-figura-principal-4, div#sub-sub-figura-principal-4 img {
+  float: left;
+	width: 354px;
+	height: 249px;
 }
 
 #figuras {
   margin-top: 100px;
+	clear: left;
 }
 
 #figuras ul {
@@ -1047,8 +1082,8 @@ header.entry-header {
 
 #figuras li {
   float: left;
-  width: 23%;
-  margin: 1%;
+  width: 24%;
+  margin: 0.5%;
   list-style-type: none;
 }
 
@@ -1134,24 +1169,7 @@ footer a {
 
 .rating {
 	height: 12px;
-	background-image: url(imagens/estrela.png);
 	float: none !important;
 	display: block;
 	clear: both;
-}
-
-.star-5 {
-	width: 60px;
-}
-.star-4 {
-	width: 48px;
-}
-.star-3 {
-	width: 36px;
-}
-.star-2 {
-	width: 24px;
-}
-.star-1 {
-	width: 12px;
 }
